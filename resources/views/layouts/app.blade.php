@@ -20,7 +20,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
+    <div id="apps">
         <nav>
             <div class="nav-wrapper">
                 <a class="brand-logo" href="{{ url('/') }}">
@@ -65,6 +65,9 @@
         <main>
             @yield('content')
         </main>
+    </div>
+    <!--- Vue Dev sample goes here -->
+    <div id="app">
     </div>
 </body>
 </html>

@@ -6,7 +6,9 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+import Vue from 'vue'
+import vuetify from './plugins/vuetify'
+import App from './App.vue'
 
 /**
  * The following block of code may be used to automatically register your
@@ -28,5 +30,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const app = new Vue({
+	vuetify,
     el: '#app',
+    render: (h) => h(App)
 });
